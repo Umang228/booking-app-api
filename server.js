@@ -7,7 +7,7 @@ require('dotenv').config();
 // Initialize Express
 const app = express();
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: ['http://localhost:3000','https://booking-app-sigma-ten.vercel.app'],
 }));
 
 app.use(bodyParser.json());
